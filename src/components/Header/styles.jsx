@@ -15,4 +15,16 @@ export const NavBar = styled.nav`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  h1 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: ${({ theme }) => theme.black};
+
+    span {
+      color: ${({ theme }) => theme.red};
+    }
+  }
 `;
