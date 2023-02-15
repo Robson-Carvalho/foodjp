@@ -1,5 +1,9 @@
-import { Container } from "./styles";
+import { Container, NavBar } from "./styles";
 
 export const Header = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <NavBar></NavBar>
+    </Container>
+  );
 };
