@@ -1,16 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { reset } from "./styles/global.style";
+import { ThemeProvider } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
-
-  :root{
-    --red: #DA2535,
-    --gray: #616161,
-    --white: #FBFBFB,
-    --white-200: #F3F3F3,
-    --black: #292929,
-  }
 
   html{
     scroll-behavior: smooth;
@@ -22,10 +15,21 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const cssVariables = {
+  red: "#DA2535",
+  gray: "#616161",
+  white: "#FBFBFB",
+  white_200: "#F3F3F3",
+  black: "#292929",
+};
+
+import { Home } from "./pages/home";
+
 export const App = () => {
   return (
-    <>
+    <ThemeProvider theme={cssVariables}>
       <GlobalStyle />
-    </>
+      <Home />
+    </ThemeProvider>
   );
 };
