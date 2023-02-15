@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  width: 100%;
-  height: auto;
+  padding: 0 24px;
 `;
 
 export const NavBar = styled.nav`
@@ -25,6 +24,45 @@ export const NavBar = styled.nav`
 
     span {
       color: ${({ theme }) => theme.red};
+    }
+  }
+`;
+
+export const Menu = styled.ul`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 91px;
+
+  li {
+    a {
+      text-decoration: none;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: ${({ theme }) => theme.black};
+      transition: 0.3s;
+
+      &:hover {
+        color: ${({ theme }) => theme.red};
+      }
+    }
+
+    &:nth-child(4) {
+      a {
+        padding: 10px 60px;
+        margin-left: 108px;
+        border: 2px solid ${({ theme }) => theme.black};
+        border-radius: 10px;
+        transition: 0.3s;
+
+        &:hover {
+          color: ${({ theme }) => theme.black};
+          border: 2px solid ${({ theme }) => theme.white_200};
+        }
+      }
     }
   }
 `;
