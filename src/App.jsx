@@ -4,6 +4,14 @@ import { reset } from "./styles/global.style";
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
+  :root{
+    --red: #DA2535,
+    --gray: #616161,
+    --white: #FBFBFB,
+    --white-200: #F3F3F3,
+    --black: #292929,
+  }
+
   html{
     scroll-behavior: smooth;
   }
