@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Container, NavBar, Menu } from "./styles";
 
+import { MobileButton } from "../MobileButton/index";
+
 export const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
@@ -24,6 +26,7 @@ export const Header = () => {
             <a href="#">Entrar</a>
           </li>
         </Menu>
+        <MobileButton />
       </NavBar>
     </Container>
   );
