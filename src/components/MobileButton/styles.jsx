@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.button`
   display: none;
+  cursor: pointer;
   background-color: transparent;
   border: none;
   flex-direction: column;
@@ -17,13 +18,43 @@ export const Container = styled.button`
     width: 28px;
     border: 2px solid ${({ theme }) => theme.black};
     border-radius: 2px;
+    transition: 0.3s;
+
+    ${({ isMenuVisible }) =>
+      isMenuVisible &&
+      css`
+        position: fixed;
+      `}
 
     &:nth-child(even) {
       width: 22px;
       border: 2px solid ${({ theme }) => theme.black};
+
       @media (max-width: 520px) {
         border: 1.5px solid ${({ theme }) => theme.black};
       }
+
+      ${({ isMenuVisible }) =>
+        isMenuVisible &&
+        css`
+          display: none;
+        `}
+    }
+
+    &:nth-child(1) {
+      ${({ isMenuVisible }) =>
+        isMenuVisible &&
+        css`
+          transform: rotate(-135deg);
+        `}
+    }
+
+    &:nth-child(3) {
+      ${({ isMenuVisible }) =>
+        isMenuVisible &&
+        css`
+          transform: rotate(135deg);
+        `}
     }
 
     @media (max-width: 520px) {
