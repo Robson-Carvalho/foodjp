@@ -41,7 +41,7 @@ export const Menu = styled.ul`
     background-color: ${({ theme }) => theme.white};
 
     width: 100%;
-    height: 100vh;
+    height: 0;
     padding-top: 64px;
 
     position: fixed;
@@ -51,12 +51,13 @@ export const Menu = styled.ul`
 
     overflow-y: hidden;
     visibility: hidden;
+
     transition: 0.3s ease-in;
 
     ${({ isMenuVisible }) =>
       isMenuVisible &&
       css`
-        height: 100%;
+        height: 100vh;
         visibility: visible;
       `}
   }
