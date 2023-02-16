@@ -32,6 +32,12 @@ export const NavBar = styled.nav`
     span {
       color: ${({ theme }) => theme.red};
     }
+
+    @media (max-width: 520px) {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 `;
 
@@ -83,6 +89,12 @@ export const Menu = styled.ul`
       &:hover {
         color: ${({ theme }) => theme.red};
       }
+
+      @media (max-width: 520px) {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
 
     &:nth-child(4) {
@@ -97,6 +109,10 @@ export const Menu = styled.ul`
         &:hover {
           color: ${({ theme }) => theme.black};
           border: 2px solid ${({ theme }) => theme.white_200};
+        }
+
+        @media (max-width: 520px) {
+          padding: 10px 50px;
         }
       }
     }

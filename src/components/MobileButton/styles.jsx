@@ -21,6 +21,13 @@ export const Container = styled.button`
     &:nth-child(even) {
       width: 22px;
       border: 2px solid ${({ theme }) => theme.black};
+      @media (max-width: 520px) {
+        border: 1.5px solid ${({ theme }) => theme.black};
+      }
+    }
+
+    @media (max-width: 520px) {
+      border: 1.5px solid ${({ theme }) => theme.black};
     }
   }
 `;
