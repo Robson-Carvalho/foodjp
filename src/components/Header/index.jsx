@@ -17,16 +17,16 @@ export const Header = () => {
           Food<span>JP</span>
         </h1>
         <Menu isMenuVisible={isMenuVisible}>
-          <li>
+          <li onClick={handleMenuVisibilityToggle}>
             <a href="#home">Inicio</a>
           </li>
-          <li>
+          <li onClick={handleMenuVisibilityToggle}>
             <a href="#menu">Cardápio</a>
           </li>
-          <li>
+          <li onClick={handleMenuVisibilityToggle}>
             <a href="#about">Sobre</a>
           </li>
-          <li>
+          <li onClick={handleMenuVisibilityToggle}>
             <a href="#">Entrar</a>
           </li>
         </Menu>
