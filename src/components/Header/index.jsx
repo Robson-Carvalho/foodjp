@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Container, NavBar, Menu } from "./styles";
 
 export const Header = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
   return (
     <Container>
       <NavBar>
