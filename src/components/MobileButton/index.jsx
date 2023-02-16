@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-export const MobileButton = () => {
+export const MobileButton = ({ isMenuVisible }) => {
   return (
     <Container
       id="btn-mobile"
@@ -8,6 +8,7 @@ export const MobileButton = () => {
       aria-haspopup="true"
       aria-controls="menu"
       aria-expanded="false"
+      isMenuVisible={isMenuVisible}
     >
       <span></span>
       <span></span>

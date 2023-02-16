@@ -12,7 +12,7 @@ export const Header = () => {
         <h1>
           Food<span>JP</span>
         </h1>
-        <Menu>
+        <Menu isMenuVisible={isMenuVisible}>
           <li>
             <a href="#home">Inicio</a>
           </li>
@@ -26,7 +26,7 @@ export const Header = () => {
             <a href="#">Entrar</a>
           </li>
         </Menu>
-        <MobileButton />
+        <MobileButton isMenuVisible={isMenuVisible} />
       </NavBar>
     </Container>
   );
