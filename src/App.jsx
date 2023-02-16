@@ -13,6 +13,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
   }
+  body, *{
+    box-sizing: border-box;
+  }
 `;
 
 const cssVariables = {
