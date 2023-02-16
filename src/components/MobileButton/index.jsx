@@ -8,6 +8,11 @@ export const MobileButton = () => {
       aria-haspopup="true"
       aria-controls="menu"
       aria-expanded="false"
-    ></Container>
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </Container>
   );
 };
