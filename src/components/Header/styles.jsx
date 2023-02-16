@@ -15,12 +15,16 @@ export const NavBar = styled.nav`
   max-width: 1228px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 0 0 0;
+  padding: 40px 0;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 520px) {
+    padding: 25px 0;
+  }
 
   h1 {
     font-family: "Montserrat";
@@ -58,14 +62,17 @@ export const Menu = styled.ul`
     padding-top: 72px;
 
     position: fixed;
-    top: 44.38px;
+    top: 129px;
     left: 0;
-    transform: translateY(44.38px);
 
     overflow-y: hidden;
     visibility: hidden;
 
     transition: 0.3s ease-in;
+
+    @media (max-width: 520px) {
+      top: 72px;
+    }
 
     ${({ isMenuVisible }) =>
       isMenuVisible &&
