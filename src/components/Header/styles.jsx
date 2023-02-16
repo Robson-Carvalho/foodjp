@@ -2,6 +2,13 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.header`
   padding: 0 24px;
+
+  ${({ isMenuVisible }) =>
+    isMenuVisible &&
+    css`
+      width: 100%;
+      position: fixed;
+    `}
 `;
 
 export const NavBar = styled.nav`
@@ -42,12 +49,12 @@ export const Menu = styled.ul`
 
     width: 100%;
     height: 0;
-    padding-top: 64px;
+    padding-top: 72px;
 
     position: fixed;
-    top: 47px;
+    top: 44.38px;
     left: 0;
-    transform: translateY(47px);
+    transform: translateY(44.38px);
 
     overflow-y: hidden;
     visibility: hidden;

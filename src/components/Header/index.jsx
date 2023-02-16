@@ -11,7 +11,7 @@ export const Header = () => {
   };
 
   return (
-    <Container>
+    <Container isMenuVisible={isMenuVisible}>
       <NavBar>
         <h1>
           Food<span>JP</span>
