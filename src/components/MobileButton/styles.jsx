@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
+  display: none;
   background-color: transparent;
   border: none;
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
+
+  @media (max-width: 1120px) {
+    display: flex;
+  }
 
   span {
     display: block;
