@@ -6,6 +6,10 @@ import { MobileButton } from "../MobileButton/index";
 export const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
+  const handleMenuVisibilityToggle = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
   return (
     <Container>
       <NavBar>
@@ -26,7 +30,10 @@ export const Header = () => {
             <a href="#">Entrar</a>
           </li>
         </Menu>
-        <MobileButton isMenuVisible={isMenuVisible} />
+        <MobileButton
+          isMenuVisible={isMenuVisible}
+          handleMenuVisibilityToggle={handleMenuVisibilityToggle}
+        />
       </NavBar>
     </Container>
   );
