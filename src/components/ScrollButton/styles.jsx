@@ -1,3 +1,20 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Container = styled.button``;
+export const Container = styled.button`
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: -10%;
+  right: 6%;
+
+  transition: 0.3s ease-in;
+  visibility: hidden;
+
+  ${({ visible }) =>
+    visible &&
+    css`
+      visibility: visible;
+      bottom: 2%;
+    `}
+`;
