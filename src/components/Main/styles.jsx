@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   padding: 0 24px;
+  background-color: ${({ theme }) => theme.white};
 
   section {
     max-width: 1228px;
