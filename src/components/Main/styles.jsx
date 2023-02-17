@@ -93,5 +93,58 @@ export const Container = styled.main`
         }
       }
     }
+
+    &:nth-child(2) {
+      margin-top: 100.3px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      img {
+        width: 604px;
+        height: 500px;
+        border-radius: 16px;
+      }
+
+      div {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 62px;
+          color: ${({ theme }) => theme.black};
+        }
+
+        span {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 38px;
+          color: ${({ theme }) => theme.black};
+        }
+
+        a {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          margin-top: 16px;
+          text-decoration-line: underline;
+          color: ${({ theme }) => theme.red};
+        }
+      }
+    }
   }
 `;

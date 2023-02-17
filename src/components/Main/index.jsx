@@ -22,10 +22,15 @@ export const Main = () => {
         <div>
           <h2>Feita de forma Tradicional</h2>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            A culinária tradicional japonesa consiste em pratos preparados de
+            arroz, peixe ou carne acompanhados de tsukemono picles.
           </span>
-          <a href="">Ler mais sobre o modo de preparo </a>
+          <a
+            target="_blank"
+            href="https://www.sp.br.emb-japan.go.jp/itpr_pt/gastronomia.html#:~:text=A%20culin%C3%A1ria%20tradicional%20japonesa%20consiste,acompanhados%20de%20tsukemono%20(picles)."
+          >
+            Ler mais sobre o modo de preparo{" "}
+          </a>
         </div>
       </section>
     </Container>
