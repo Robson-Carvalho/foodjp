@@ -100,12 +100,22 @@ export const Container = styled.main`
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+      gap: 56px;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+        margin-top: 48px;
+      }
 
       img {
         width: 604px;
         height: 500px;
         border-radius: 16px;
+
+        @media (max-width: 720px) {
+          width: 312px;
+          height: 350px;
+        }
       }
 
       div {
@@ -123,6 +133,14 @@ export const Container = styled.main`
           font-size: 48px;
           line-height: 62px;
           color: ${({ theme }) => theme.black};
+
+          @media (max-width: 520px) {
+            max-width: 181px;
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+            margin: 0 auto;
+          }
         }
 
         span {
@@ -132,6 +150,15 @@ export const Container = styled.main`
           font-size: 24px;
           line-height: 38px;
           color: ${({ theme }) => theme.black};
+
+          @media (max-width: 520px) {
+            max-width: 290px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            margin: 0 auto;
+          }
         }
 
         a {
@@ -143,6 +170,12 @@ export const Container = styled.main`
           margin-top: 16px;
           text-decoration-line: underline;
           color: ${({ theme }) => theme.red};
+
+          @media (max-width: 520px) {
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0 auto;
+          }
         }
       }
     }
