@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.header`
   padding: 0 24px;
+  background-color: ${({ theme }) => theme.white};
 
   ${({ isMenuVisible }) =>
     isMenuVisible &&
