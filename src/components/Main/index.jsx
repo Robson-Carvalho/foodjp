@@ -1,5 +1,7 @@
 import { Container } from "./styles";
 
+import imgSushiJapanese from "../../assets/sushi-japanese.png";
+
 export const Main = () => {
   return (
     <Container>
@@ -12,6 +14,7 @@ export const Main = () => {
           </span>
           <a href="#">Cardápio</a>
         </div>
+        <img src={imgSushiJapanese} alt="Image Sushi Japanese" />
       </section>
     </Container>
   );
