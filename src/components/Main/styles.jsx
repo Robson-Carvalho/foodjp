@@ -180,5 +180,21 @@ export const Container = styled.main`
         }
       }
     }
+    &:nth-child(3) {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 54px;
+
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 59px;
+        color: ${({ theme }) => theme.black};
+      }
+    }
   }
 `;
