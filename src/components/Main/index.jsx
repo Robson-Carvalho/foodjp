@@ -3,6 +3,10 @@ import { Container } from "./styles";
 import imgSushiJapanese from "../../assets/sushi-japanese.png";
 import imgHoldingPlate from "../../assets/img-holding-plate.png";
 
+import imgChickenRamen from "../../assets/img-3.png";
+import imgSpicyRamen from "../../assets/img-1.png";
+import imgTraditionalRamen from "../../assets/img-2.png";
+
 export const Main = () => {
   return (
     <Container>
@@ -31,6 +35,35 @@ export const Main = () => {
           >
             Ler mais sobre o modo de preparo{" "}
           </a>
+        </div>
+      </section>
+      <section>
+        <h2>Mais populares</h2>
+        <div>
+          <article>
+            <img src={imgChickenRamen} alt="Chicken Ramen" />
+            <h3>Ramen de Frango</h3>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <span>R$ 30</span>
+          </article>
+          <article>
+            <img src={imgSpicyRamen} alt="Spicy Ramen" />
+            <h3>Ramen de Frango</h3>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <span>R$ 30</span>
+          </article>
+          <article>
+            <img src={imgTraditionalRamen} alt="Traditional Ramen" />
+            <h3>Ramen de Frango</h3>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <span>R$ 30</span>
+          </article>
         </div>
       </section>
     </Container>
