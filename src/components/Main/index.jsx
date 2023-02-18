@@ -43,25 +43,19 @@ export const Main = () => {
           <article>
             <img src={imgChickenRamen} alt="Chicken Ramen" />
             <h3>Ramen de Frango</h3>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <span>R$ 30</span>
           </article>
           <article>
             <img src={imgSpicyRamen} alt="Spicy Ramen" />
             <h3>Ramen de Frango</h3>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <span>R$ 30</span>
           </article>
           <article>
             <img src={imgTraditionalRamen} alt="Traditional Ramen" />
             <h3>Ramen de Frango</h3>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <span>R$ 30</span>
           </article>
         </div>
