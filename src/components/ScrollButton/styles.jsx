@@ -7,6 +7,7 @@ export const Container = styled.button`
   position: fixed;
   bottom: -10%;
   right: 6%;
+  cursor: pointer;
 
   transition: 0.3s ease-in;
   visibility: hidden;
