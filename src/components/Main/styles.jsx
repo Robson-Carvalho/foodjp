@@ -187,6 +187,10 @@ export const Container = styled.main`
       align-items: center;
       gap: 162px;
 
+      @media (max-width: 520px) {
+        margin-top: 56px;
+      }
+
       h2 {
         font-family: "Montserrat";
         font-style: normal;
@@ -194,6 +198,11 @@ export const Container = styled.main`
         font-size: 48px;
         line-height: 59px;
         color: ${({ theme }) => theme.black};
+
+        @media (max-width: 520px) {
+          font-size: 24px;
+          line-height: 30px;
+        }
       }
 
       div {
@@ -217,10 +226,20 @@ export const Container = styled.main`
           border-radius: 32px;
           background-color: ${({ theme }) => theme.white_200};
 
+          @media (max-width: 520px) {
+            max-width: 312px;
+            width: 100%;
+            height: 401.29px;
+          }
+
           img {
             position: absolute;
-            top: -22%;
+            top: -10%;
             width: 296px;
+
+            @media (max-width: 520px) {
+              width: 209px;
+            }
           }
 
           h3 {
@@ -235,6 +254,13 @@ export const Container = styled.main`
 
             color: #292929;
             margin-bottom: 16px;
+
+            @media (max-width: 520px) {
+              padding: 202.65px 0 0 0;
+              font-size: 24px;
+              line-height: 30px;
+              margin-bottom: 16.15px;
+            }
           }
 
           p {
@@ -249,16 +275,26 @@ export const Container = styled.main`
 
             color: #616161;
             margin-bottom: 32px;
+
+            @media (max-width: 520px) {
+              font-size: 16.0514px;
+              line-height: 160%;
+              margin-bottom: 13.21px;
+            }
           }
+
           span {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
             font-size: 32px;
             line-height: 39px;
-            /* identical to box height */
-
             color: #292929;
+
+            @media (max-width: 520px) {
+              font-size: 32.1029px;
+              line-height: 39px;
+            }
           }
         }
       }
