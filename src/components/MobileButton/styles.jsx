@@ -19,6 +19,7 @@ export const Container = styled.button`
     border: 2px solid ${({ theme }) => theme.black};
     border-radius: 2px;
     transition: 0.3s;
+    z-index: 100;
 
     ${({ isMenuVisible }) =>
       isMenuVisible &&

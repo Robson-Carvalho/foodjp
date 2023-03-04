@@ -7,7 +7,7 @@ import { BsFillArrowUpSquareFill } from "react-icons/bs";
 
 export const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
-  const { red, white } = useContext(ThemeContext);
+  const { red } = useContext(ThemeContext);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -21,7 +21,6 @@ export const ScrollButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   };
 
@@ -29,12 +28,7 @@ export const ScrollButton = () => {
 
   return (
     <Container visible={visible}>
-      <BsFillArrowUpSquareFill
-        size={32}
-        fill={red}
-        style={{ background: white }}
-        onClick={scrollToTop}
-      />
+      <BsFillArrowUpSquareFill size={36} fill={red} onClick={scrollToTop} />
     </Container>
   );
 };

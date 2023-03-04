@@ -3,13 +3,6 @@ import styled, { css } from "styled-components";
 export const Container = styled.header`
   padding: 0 24px;
   background-color: ${({ theme }) => theme.white};
-
-  ${({ isMenuVisible }) =>
-    isMenuVisible &&
-    css`
-      width: 100%;
-      position: fixed;
-    `}
 `;
 
 export const NavBar = styled.nav`
@@ -60,10 +53,10 @@ export const Menu = styled.ul`
 
     width: 100%;
     height: 0;
-    padding-top: 72px;
+    padding-top: 132px;
 
     position: fixed;
-    top: 129px;
+    top: 0;
     left: 0;
 
     overflow-y: hidden;
@@ -71,15 +64,12 @@ export const Menu = styled.ul`
 
     transition: 0.3s ease-in;
 
-    @media (max-width: 520px) {
-      top: 72px;
-    }
-
     ${({ isMenuVisible }) =>
       isMenuVisible &&
       css`
         height: 100vh;
         visibility: visible;
+        z-index: 100;
       `}
   }
 

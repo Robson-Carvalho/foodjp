@@ -1,15 +1,8 @@
-import { useState } from "react";
 import { Container, NavBar, Menu } from "./styles";
 
 import { MobileButton } from "../MobileButton/index";
 
-export const Header = () => {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-
-  const handleMenuVisibilityToggle = () => {
-    setIsMenuVisible(!isMenuVisible);
-  };
-
+export const Header = ({ isMenuVisible, handleMenuVisibilityToggle }) => {
   return (
     <Container isMenuVisible={isMenuVisible}>
       <NavBar>

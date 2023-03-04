@@ -6,7 +6,7 @@ export const Container = styled.button`
   outline: none;
   position: fixed;
   bottom: -10%;
-  right: 6%;
+  right: 3%;
   cursor: pointer;
 
   transition: 0.3s ease-in;
@@ -16,6 +16,7 @@ export const Container = styled.button`
     visible &&
     css`
       visibility: visible;
-      bottom: 2%;
+      bottom: 3%;
+      z-index: 10;
     `}
 `;
