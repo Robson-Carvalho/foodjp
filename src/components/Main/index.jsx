@@ -11,7 +11,7 @@ export const Main = () => {
   return (
     <Container>
       <section>
-        <div>
+        <div id="home">
           <h2>Comida Oriental</h2>
           <span>
             A culinária Japonesa é bastante equilibrada, sendo muito rica em
@@ -38,7 +38,7 @@ export const Main = () => {
         </div>
       </section>
       <section>
-        <h2>Mais populares</h2>
+        <h2 id="menu">Mais populares</h2>
       </section>
     </Container>
   );
