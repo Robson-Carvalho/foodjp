@@ -1,72 +1,60 @@
-<h1 align="center" style="font-weight: 800">Food<span style="color: #DA2535; font-weight: 800">JP<span></h1>
-
 <p align="center">
-  <a href="https://foodjp-umber.vercel.app/" target="_black">
-    <img src="http://img.shields.io/static/v1?laabel=STATUS&message=In%20Production&color=DA2535&style=for-the-badge"/>
-  </a>
+  <img alt="portfolio" src=".github/preview.png">
 </p>
 
-<p align="center">This project is a landing page for FoodJP, an oriental food restaurant that seeks to showcase the best and most popular oriental dishes.</p>
+<p align="center">
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=131313&labelColor=DA2535" alt="License">
+
+  <img src="https://img.shields.io/github/forks/Robson-Carvalho/portfolio?label=forks&message=MIT&color=131313&labelColor=DA2535" alt="Forks">
+
+  <img src="https://img.shields.io/github/stars/Robson-Carvalho/portfolio?label=stars&message=MIT&color=131313&labelColor=DA2535" alt="Stars">
+</p>
+
+<h1 align="center">
+    <!-- <img alt="portfolio" title="portfolio" src=".github/preview.gif" /> -->
+</h1>
 
 <br>
 
-<h4 align="center">
-	🏗️  FoodJP under construction...  🏗️
-</h4>
+## 🧪 Technologies
 
-## Layout
+This project was developed using the following technologies:
 
-You can view the project layout through [THIS LINK](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=107523%3A1216&t=eVWEy3hpVFitvmmV-0). You must have an account at [Figma](https://figma.com) to access it.
+- [ReactJS](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
 
-## Running project
+## 🚀 Getting started
 
-<p align="center">
-  <img src="" alt="Project preview not adding yet..." />
-</p>
-
-## Prerequisites
-
-Before you begin, you will need to have the following tools installed on your machine:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
-It's also nice to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)
-
-### How to run the project?
+Clone the project and access the folder.
 
 ```bash
-# Clone this repository
 git clone https://github.com/Robson-Carvalho/foodjp.git
 
-# Access the project folder in terminal/cmd
 cd foodjp
-
-# Install the dependencies
-npm install
-
-# Run the application in development mode
-npm run dev
-
-# The server will start on port:5173 - go to http://localhost:5173
 ```
 
-## Tecnologias
+Run this command to install the dependencies.
 
-This project was developed with the following technologies:
+```bash
+npm install
 
-- [ReactJs](https://reactjs.org/)
-- [Styled-Component](https://styled-components.com/)
-- [React Icons](https://react-icons.github.io/react-icons)
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-- [Vite](https://vitejs.dev/)
+npm run dev
+```
 
-## Autor
+## 🔖 Layout
 
-<a href="https://github.com/Robson-Carvalho">
- <img style="border-radius="50px; src="https://avatars.githubusercontent.com/u/82351564?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Robson Carvalho</b></sub></a> <a href="https://github.com/Robson-Carvalho" title="GitHub">:octocat:</a>
+You can view the project through the links below:
 
-Made with ❤️ by Robson Carvalho 👋🏽 Get in touch!
+- [Live Preview](https://foodjp-robson-carvalho.vercel.app/)
 
-[![Linkedin Badge](https://img.shields.io/badge/-Robson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/devrobson/)](https://www.linkedin.com/in/devrobson/)
-[![Gmail Badge](https://img.shields.io/badge/-robson73904@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:robson73904@gmail.com)](mailto:robson73904@gmail.com)
+- [Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=107523%3A1216&t=vXWq2FBegTf9ls0z-0)
+
+Remembering that you need to have a [Figma](http://figma.com/) account to access it.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
+
+---
+
+Made with 💜 by [Robson Carvalho](https://portfolio-robson-carvalho.vercel.app/) 👋
