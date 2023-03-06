@@ -10,8 +10,8 @@ import imgTraditionalRamen from "../../assets/img-2.png";
 export const Main = () => {
   return (
     <Container>
-      <section>
-        <div id="home">
+      <section id="home">
+        <div>
           <h2>Comida Oriental</h2>
           <span>
             A culinária Japonesa é bastante equilibrada, sendo muito rica em
@@ -37,8 +37,40 @@ export const Main = () => {
           </a>
         </div>
       </section>
-      <section>
-        <h2 id="menu">Mais populares</h2>
+      <section id="menu">
+        <h2>Mais populares</h2>
+        <div className="cards">
+          <article className="card">
+            <div>
+              <img src={imgChickenRamen} alt="" />
+              <p className="name">Ramen de Frango</p>
+              <span className="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+              <p className="price">R$ 30</p>
+            </div>
+          </article>
+          <article className="card">
+            <div>
+              <img src={imgSpicyRamen} alt="" />
+              <p className="name">Ramen Apimentado</p>
+              <span className="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+              <p className="price">R$ 30</p>
+            </div>
+          </article>
+          <article className="card">
+            <div>
+              <img src={imgTraditionalRamen} alt="" />
+              <p className="name">Ramen Tradicional</p>
+              <span className="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </span>
+              <p className="price">R$ 30</p>
+            </div>
+          </article>
+        </div>
       </section>
     </Container>
   );

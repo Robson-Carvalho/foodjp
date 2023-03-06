@@ -96,7 +96,7 @@ export const Container = styled.main`
     }
 
     &:nth-child(2) {
-      margin-top: 100.3px;
+      padding-top: 100.3px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -105,7 +105,7 @@ export const Container = styled.main`
 
       @media (max-width: 1200px) {
         flex-direction: column;
-        margin-top: 48px;
+        padding-top: 48px;
       }
 
       img {
@@ -181,14 +181,15 @@ export const Container = styled.main`
       }
     }
     &:nth-child(3) {
-      margin-top: 100px;
+      padding-top: 100px;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 162px;
 
       @media (max-width: 520px) {
-        margin-top: 56px;
+        padding-top: 56px;
       }
 
       h2 {
@@ -196,12 +197,89 @@ export const Container = styled.main`
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
-        line-height: 59px;
         color: ${({ theme }) => theme.black};
 
         @media (max-width: 520px) {
           font-size: 24px;
           line-height: 30px;
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 137px 44px;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+          position: relative;
+          max-width: 380px;
+          width: 100%;
+
+          div {
+            background-color: ${({ theme }) => theme.white_200};
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 270px 25px 32px 25px;
+            border-radius: 32px;
+
+            @media screen and (max-width: 580px) {
+              padding: 202px 32px 48px 32px;
+            }
+
+            img {
+              position: absolute;
+              top: -14%;
+              left: 50%;
+              transform: translate(-50%, -14%);
+
+              @media screen and (max-width: 580px) {
+                width: 209px;
+              }
+            }
+
+            .name {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              color: ${({ theme }) => theme.black};
+              margin-bottom: 16px;
+
+              @media screen and (max-width: 580px) {
+                font-size: 24px;
+              }
+            }
+
+            .description {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              text-align: center;
+              color: ${({ theme }) => theme.gray};
+              margin-bottom: 32px;
+
+              @media screen and (max-width: 580px) {
+                font-size: 16.0514px;
+              }
+            }
+
+            .price {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 32px;
+              color: ${({ theme }) => theme.black};
+
+              @media screen and (max-width: 580px) {
+                font-weight: 400;
+              }
+            }
+          }
         }
       }
     }
