@@ -11,7 +11,7 @@
 </p>
 
 <h1 align="center">
-    <!-- <img alt="portfolio" title="portfolio" src=".github/preview.gif" /> -->
+
 </h1>
 
 <br>
