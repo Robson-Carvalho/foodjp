@@ -286,10 +286,17 @@ export const Container = styled.main`
     }
 
     &:nth-child(4) {
-      padding: 100px 0;
+      padding: 100px 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
+      @media screen and (max-width: 1200px) {
+        align-items: center;
+      }
+      @media screen and (max-width: 520px) {
+        padding: 56px 0 0 0;
+      }
 
       h2 {
         font-family: "Montserrat";
@@ -298,6 +305,13 @@ export const Container = styled.main`
         font-size: 48px;
         color: ${({ theme }) => theme.black};
         margin-bottom: 48px;
+
+        @media (max-width: 520px) {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+        }
       }
 
       .comments {
@@ -307,6 +321,10 @@ export const Container = styled.main`
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 20px;
+
+        @media screen and (max-width: 1200px) {
+          justify-content: center;
+        }
 
         .comment {
           max-width: 604px;
@@ -320,8 +338,20 @@ export const Container = styled.main`
           align-items: flex-start;
           gap: 16px;
 
+          @media screen and (max-width: 1200px) {
+            align-items: center;
+          }
+
+          @media screen and (max-width: 520px) {
+            padding: 24px 22px 22px 22px;
+          }
+
           img {
             margin-bottom: 8px;
+
+            @media screen and (max-width: 520px) {
+              width: 60px;
+            }
           }
 
           .name {
@@ -330,6 +360,10 @@ export const Container = styled.main`
             font-weight: 500;
             font-size: 32px;
             color: ${({ theme }) => theme.black};
+
+            @media screen and (max-width: 520px) {
+              font-size: 18px;
+            }
           }
 
           .message {
@@ -338,6 +372,11 @@ export const Container = styled.main`
             font-weight: 400;
             font-size: 24px;
             color: ${({ theme }) => theme.gray};
+
+            @media screen and (max-width: 520px) {
+              text-align: center;
+              font-size: 16px;
+            }
           }
         }
       }
