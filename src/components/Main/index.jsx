@@ -7,6 +7,10 @@ import imgChickenRamen from "../../assets/img-3.png";
 import imgSpicyRamen from "../../assets/img-1.png";
 import imgTraditionalRamen from "../../assets/img-2.png";
 
+import profile1 from "../../assets/profile1.png";
+import profile2 from "../../assets/profile2.png";
+import starsImage from "../../assets/stars.svg";
+
 export const Main = () => {
   return (
     <Container>
@@ -70,6 +74,28 @@ export const Main = () => {
               <p className="price">R$ 30</p>
             </div>
           </article>
+        </div>
+      </section>
+      <section>
+        <h2>Comentários</h2>
+        <div className="comments">
+          <div className="comment">
+            <img src={profile1} alt="" />
+            <p className="name">Daniele Almeida</p>
+            <span className="message">
+              Ótimo serviço! Encantada com a qualidade dos pratos.
+            </span>
+            <img src={starsImage} alt="" />
+          </div>
+          <div className="comment">
+            <img src={profile2} alt="" />
+            <p className="name">Ricardo França</p>
+            <span className="message">
+              Não é apenas a comida excelente, o serviço torna a experiência
+              especial.
+            </span>
+            <img src={starsImage} alt="" />
+          </div>
         </div>
       </section>
     </Container>
