@@ -10,6 +10,9 @@ import imgTraditionalRamen from "../../assets/img-2.png";
 import profile1 from "../../assets/profile1.png";
 import profile2 from "../../assets/profile2.png";
 import starsImage from "../../assets/stars.svg";
+import locationIcon from "../../assets/pin.svg";
+
+import mapRio from "../../assets/mapa-rio.png";
 
 export const Main = () => {
   return (
@@ -96,6 +99,18 @@ export const Main = () => {
             </span>
             <img src={starsImage} alt="" />
           </div>
+        </div>
+      </section>
+      <section>
+        <h2>Localizção</h2>
+        <img className="map" src={mapRio} alt="Mapa do rio" />
+
+        <div className="wrapperInput">
+          <div className="input">
+            <img src={locationIcon} alt="" />
+            <input type="text" placeholder="Localização de entrega" />
+          </div>
+          <button>Buscar</button>
         </div>
       </section>
     </Container>

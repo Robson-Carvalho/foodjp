@@ -291,7 +291,7 @@ export const Container = styled.main`
       flex-direction: column;
       align-items: flex-start;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1275px) {
         align-items: center;
       }
       @media screen and (max-width: 520px) {
@@ -322,7 +322,7 @@ export const Container = styled.main`
         flex-wrap: wrap;
         gap: 20px;
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1275px) {
           justify-content: center;
         }
 
@@ -378,6 +378,83 @@ export const Container = styled.main`
               font-size: 16px;
             }
           }
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      padding: 100px 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 48px;
+        color: ${({ theme }) => theme.dark};
+      }
+
+      .map {
+        margin-bottom: 56px;
+        max-width: 1228px;
+        width: 100%;
+        height: 500px;
+      }
+
+      .wrapperInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+
+        .input {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 16px;
+          padding: 20px;
+          background: #fbfbfb;
+          border-top: 1px solid #292929;
+          border-left: 1px solid #292929;
+          border-bottom: 1px solid #292929;
+          border-radius: 10px 0px 0px 10px;
+
+          width: 630px;
+          height: 70px;
+
+          img {
+            width: 30px;
+            height: 30px;
+          }
+
+          input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            color: ${({ theme }) => theme.dark};
+          }
+        }
+
+        button {
+          border: none;
+          padding: 20px 52px;
+          background: ${({ theme }) => theme.red};
+          border-radius: 0px 10px 10px 0px;
+
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          color: ${({ theme }) => theme.white};
         }
       }
     }
